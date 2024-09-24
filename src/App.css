@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kalam:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* Fonts */
+.font-oregano{
+    font-family: "Oregano", cursive;
+}
+
+.font-roboto{
+    font-family: "Roboto Slab", serif;
+}
+
+.font-ubuntu{
+  font-family: "Ubuntu", sans-serif;
+}
+
+.font-josefin{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+
+
+/*animation*/
+.word {
+    display: inline-block;
+    opacity: 0;
+    white-space: pre-wrap;
+}
+
+@keyframes typewriter {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+/*Signup and Login form*/
+
+
+#signup-form div,
+#login-form div{
+    display: flex;
+    flex-direction: column;
+}
+
+#signup-form div input,
+#login-form div input{
+    padding: 5px 8px;
+    border-radius: 6px;
+    outline: none;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    color:rgb(19, 164, 43)
+}
+
+#signup-form div label,
+#login-form div label{
+    color: white;
+}
+
+#signup-form div input:focus
+#login-form div input:focus{
+    border: 3px;
+    border-color: rgb(233, 233, 12);
+    border-style: solid;
+    
+}
+
+#signup-form div p,
+#login-form div p{
+    color: red;
+    margin-top: 2px;
+}
+
+#singup-button,
+#login-button{
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.single-record input{
+    padding: 4px 10px 4px 10px;
+    text-align: center;
+    border-radius: 5px;
+    width: 150px;
+    background: transparent;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.single-record input:focus{
+  border: 3px solid rgb(11, 66, 74);
+  outline: none;
+}
+
+
+/* input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+display: none;
+} */
+
+input[type="datetime-local"] {
+position: relative;
+width: 175px;
+padding: 5px 10px 5px 10px;
+z-index: 1;
+}
+
+input[type="datetime-local"]::before {
+content: '';
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 2;
+pointer-events: none;
+background: transparent;
+}
+/* 
+input[type="datetime-local"]::-ms-clear {
+display: none;
+} */
+
+/* input[type="datetime-local"]::-ms-reveal {
+display: none;
+}  */
+
+
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .modern-table thead {
+    background: linear-gradient(135deg, #444751, #4b494e);
+    color: #000000;
+  }
+  
+  .modern-table th {
+    padding: 12px 0 ;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  
+  
+  .modern-table td {
+    padding: 12px 0;
+  }
+  
+  .modern-table tbody tr:nth-of-type(even){
+    background-color: gray;
+  }
+
+  .modern-table tbody tr:nth-of-type(odd) {
+    background-color: #3e7899;
+  }
+  
+  .modern-table tbody tr:hover {
+    background-color: #b75ab2;
+    cursor: pointer;
+  }
+
+  .modern-table tbody tr:last-of-type td {
+    border-bottom: none;
+  }
+  
+
+
+
+
+
+  
+
+/* Gradient Color */
+
+.gradient-background{
+    background-image: linear-gradient(to right bottom, #18191a, #212223, #2a2c2b, #343534, #3f3f3e);
+}
+
+
+/* From Selected */
+
+.select-wrapper {
+    position: relative;
+  }
+  
+  .select-wrapper select {
+    /* Your select styles */
+  }
+  
+  .select-wrapper select:focus + .dropdown-options {
+    display: block;
+  }
+  
+  .dropdown-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  
+  .dropdown-options option {
+    /* Your option styles */
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Hide spinner in Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hide spinner in Firefox */
+input[type="number"] {
+    appearance: text-field;
+    -moz-appearance: textfield;
+}
+
+
+@media (max-width:640px) {
+  
+}
